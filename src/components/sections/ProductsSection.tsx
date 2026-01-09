@@ -103,8 +103,7 @@ export function ProductsSection() {
                   size="lg"
                   className="w-full text-sm sm:text-base md:text-lg py-4 md:py-6"
                   onClick={() => {
-                    // Add to cart or checkout logic
-                    window.location.href = `#contact`
+                    window.open('https://selar.com/o55ch4567z', '_blank')
                   }}
                 >
                   Get Your Training Manual Now
@@ -182,7 +181,7 @@ export function ProductsSection() {
             size="lg"
             className="bg-white text-industrial-orange-500 hover:bg-gray-100 border-0 text-sm sm:text-base md:text-lg py-4 md:py-6 px-6 sm:px-8 md:px-12"
             onClick={() => {
-              window.location.href = `#contact`
+              window.open('https://selar.com/o55ch4567z', '_blank')
             }}
           >
             Get Started Today - $50.99

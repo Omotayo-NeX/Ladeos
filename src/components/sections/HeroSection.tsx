@@ -36,7 +36,7 @@ export function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Button
-              onClick={() => scrollToSection('products')}
+              onClick={() => window.open('https://selar.com/o55ch4567z', '_blank')}
               variant="primary"
               size="lg"
             >
