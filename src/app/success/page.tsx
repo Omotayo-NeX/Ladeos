@@ -52,7 +52,7 @@ export default function SuccessPage() {
 
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h2 className="font-bold text-lg mb-4 text-gray-900">
-                What's Next?
+                What&apos;s Next?
               </h2>
               <ul className="text-left space-y-3 text-gray-700">
                 <li className="flex items-start">
