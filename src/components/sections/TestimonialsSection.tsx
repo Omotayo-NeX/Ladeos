@@ -29,7 +29,7 @@ export function TestimonialsSection() {
       <Container>
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
-            What You\'ll Gain
+            What You&apos;ll Gain
           </h2>
           <p className="text-xl text-gray-600">
             Comprehensive training designed to launch your heavy equipment career

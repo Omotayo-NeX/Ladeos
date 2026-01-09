@@ -14,7 +14,7 @@ export default function ThankYouPage() {
             </div>
 
             <h1 className="font-display text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-              You're All Set!
+              You&apos;re All Set!
             </h1>
 
             <p className="text-xl text-gray-600 mb-8">
@@ -27,8 +27,8 @@ export default function ThankYouPage() {
                 Check Your Email
               </h2>
               <p className="text-gray-700">
-                We've sent your free guide <strong>"10 Essential Skills Every
-                Equipment Operator Must Master"</strong> to your inbox.
+                We&apos;ve sent your free guide <strong>&quot;10 Essential Skills Every
+                Equipment Operator Must Master&quot;</strong> to your inbox.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function ThankYouPage() {
             </div>
 
             <p className="text-sm text-gray-500 mt-8">
-              Didn't receive the email? Check your spam folder or{' '}
+              Didn&apos;t receive the email? Check your spam folder or{' '}
               <Link href="/#contact" className="text-industrial-orange-500 hover:underline">
                 contact us
               </Link>

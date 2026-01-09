@@ -71,7 +71,7 @@ export function EmailCaptureForm({ inline = false, className }: EmailCaptureForm
           </svg>
         </div>
         <h3 className="text-xl font-bold text-white mb-2">
-          You're all set!
+          You&apos;re all set!
         </h3>
         <p className="text-white/80">
           Check your inbox for your free guide.

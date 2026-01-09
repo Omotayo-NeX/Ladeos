@@ -12,7 +12,7 @@ export function ContactSection() {
             Get in Touch
           </h2>
           <p className="text-xl text-gray-600">
-            Have questions? We're here to help you succeed.
+            Have questions? We&apos;re here to help you succeed.
           </p>
         </div>
 

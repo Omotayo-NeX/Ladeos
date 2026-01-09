@@ -64,7 +64,7 @@ export function HeroSection() {
               ))}
             </div>
             <span className="text-sm font-medium">
-              Join 1,000+ operators who've advanced their careers
+              Join 1,000+ operators who&apos;ve advanced their careers
             </span>
           </div>
         </div>
