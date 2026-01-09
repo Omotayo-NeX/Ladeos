@@ -23,12 +23,12 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-transparent z-10" />
 
       {/* Content */}
-      <Container className="relative z-20">
+      <Container className="relative z-20 px-4">
         <div className="max-w-3xl">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             Master Heavy Equipment Operation
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-300">
             Professional digital training for excavator and forklift operators.
             Industry-expert instruction, safety-focused curriculum, instant
             access.
@@ -40,15 +40,15 @@ export function HeroSection() {
               variant="primary"
               size="lg"
             >
-              Browse Training Programs
+              Get Training Manual
             </Button>
             <Button
-              onClick={() => scrollToSection('email-capture')}
+              onClick={() => window.open('https://wa.me/2348062284991', '_blank')}
               variant="outline"
               size="lg"
               className="bg-transparent"
             >
-              Download Free Guide
+              WhatsApp Us
             </Button>
           </div>
 

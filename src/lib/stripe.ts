@@ -1,18 +1,21 @@
 import Stripe from 'stripe'
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY is not set in environment variables')
-}
-
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2025-12-15.clover',
-  typescript: true,
-})
+// Make Stripe optional - only initialize if key is present
+export const stripe = process.env.STRIPE_SECRET_KEY
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2025-12-15.clover',
+      typescript: true,
+    })
+  : null
 
 export async function createCheckoutSession(
   priceId: string,
   quantity: number = 1,
 ): Promise<Stripe.Checkout.Session> {
+  if (!stripe) {
+    throw new Error('Stripe is not configured. Please set STRIPE_SECRET_KEY.')
+  }
+
   const session = await stripe.checkout.sessions.create({
     mode: 'payment',
     line_items: [
@@ -33,6 +36,10 @@ export async function createCheckoutSession(
 export async function getCheckoutSession(
   sessionId: string,
 ): Promise<Stripe.Checkout.Session> {
+  if (!stripe) {
+    throw new Error('Stripe is not configured. Please set STRIPE_SECRET_KEY.')
+  }
+
   const session = await stripe.checkout.sessions.retrieve(sessionId)
   return session
 }

@@ -26,7 +26,7 @@ export const products: Product[] = [
     name: 'Excavator Operator Training Manual',
     description: 'In-depth reference guide covering all aspects of excavator operation, maintenance, and safety.',
     longDescription: 'A comprehensive manual that serves as your complete reference for excavator operation. Perfect for both new operators and experienced professionals looking to refresh their knowledge or prepare for certification.',
-    price: 49.99,
+    price: 50.99,
     stripePriceId: 'price_placeholder_2', // Replace with actual Stripe price ID
     features: [
       'Detailed equipment overview',

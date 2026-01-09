@@ -15,13 +15,13 @@ const trainingImages = [
 
 export function RealWorldExperienceSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
       <Container>
-        <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16 px-4">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
             Real-World Training Experience
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Our instructors bring years of hands-on experience operating heavy
             equipment in real job sites. See our training in action.
           </p>
@@ -48,32 +48,32 @@ export function RealWorldExperienceSection() {
         </div>
       </Container>
 
-      <div className="mt-16 bg-gray-900 py-16">
+      <div className="mt-8 md:mt-12 lg:mt-16 bg-gray-900 py-8 md:py-12 lg:py-16">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8 text-center px-4">
             <div>
-              <div className="text-4xl font-bold text-industrial-orange-500 mb-2">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-industrial-orange-500 mb-1 md:mb-2">
                 30+
               </div>
-              <div className="text-gray-300">Years Experience</div>
+              <div className="text-gray-300 text-sm md:text-base">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-industrial-orange-500 mb-2">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-industrial-orange-500 mb-1 md:mb-2">
                 1,000+
               </div>
-              <div className="text-gray-300">Operators Trained</div>
+              <div className="text-gray-300 text-sm md:text-base">Operators Trained</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-industrial-orange-500 mb-2">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-industrial-orange-500 mb-1 md:mb-2">
                 50+
               </div>
-              <div className="text-gray-300">Job Sites</div>
+              <div className="text-gray-300 text-sm md:text-base">Job Sites</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-industrial-orange-500 mb-2">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-industrial-orange-500 mb-1 md:mb-2">
                 100%
               </div>
-              <div className="text-gray-300">Safety First</div>
+              <div className="text-gray-300 text-sm md:text-base">Safety First</div>
             </div>
           </div>
         </Container>

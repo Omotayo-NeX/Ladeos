@@ -4,8 +4,8 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ladeos.com',
   ogImage: '/images/og-image.jpg',
   links: {
-    email: 'info@ladeos.com',
-    phone: '+1-XXX-XXX-XXXX', // Update with actual phone if available
+    email: 'ladeos.ladeos.oo@gmail.com',
+    phone: '+2348062284991',
   },
   social: {
     twitter: '', // Add social media links as needed
