@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
 import { Product } from '@/types/product'
 import { Card, CardContent } from '@/components/ui/Card'
@@ -13,29 +12,8 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const [isLoading, setIsLoading] = useState(false)
-
-  const handlePurchase = async () => {
-    setIsLoading(true)
-
-    try {
-      const response = await fetch('/api/stripe/checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId: product.stripePriceId }),
-      })
-
-      const { url } = await response.json()
-
-      if (url) {
-        window.location.href = url
-      }
-    } catch (error) {
-      console.error('Purchase error:', error)
-      alert('Something went wrong. Please try again.')
-    } finally {
-      setIsLoading(false)
-    }
+  const handlePurchase = () => {
+    window.open('https://selar.com/o55ch4567z', '_blank')
   }
 
   return (
@@ -85,9 +63,8 @@ export function ProductCard({ product }: ProductCardProps) {
             onClick={handlePurchase}
             variant="primary"
             className="w-full"
-            isLoading={isLoading}
           >
-            {isLoading ? 'Processing...' : 'Buy Now'}
+            Buy Now
           </Button>
         </div>
       </CardContent>
