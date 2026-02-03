@@ -90,8 +90,6 @@ export function ProductsSection() {
               <div className="bg-gray-50 rounded-lg p-4 md:p-6 mb-4 md:mb-6">
                 <div className="flex flex-wrap items-baseline gap-2 md:gap-3 mb-3 md:mb-4">
                   <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">${mainProduct?.price}</span>
-                  <span className="text-gray-500 line-through text-base md:text-xl">$99.99</span>
-                  <span className="bg-red-500 text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-bold">SAVE 50%</span>
                 </div>
                 <p className="text-gray-600 text-xs sm:text-sm">One-time payment • Lifetime access • No recurring fees</p>
               </div>
@@ -184,7 +182,7 @@ export function ProductsSection() {
               window.open('https://selar.com/o55ch4567z', '_blank')
             }}
           >
-            Get Started Today - $50.99
+            Get Started Today - $10.8
           </Button>
         </div>
       </Container>
