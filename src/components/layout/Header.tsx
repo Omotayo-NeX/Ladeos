@@ -48,6 +48,12 @@ export function Header() {
             >
               Reviews
             </button>
+            <Link
+              href="/stories/tamuno"
+              className="text-white hover:text-industrial-orange-500 transition-colors font-medium"
+            >
+              Stories
+            </Link>
             <button
               onClick={() => scrollToSection('contact')}
               className="text-white hover:text-industrial-orange-500 transition-colors font-medium"
@@ -123,6 +129,13 @@ export function Header() {
               >
                 Reviews
               </button>
+              <Link
+                href="/stories/tamuno"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-white hover:text-industrial-orange-500 transition-colors font-medium text-left"
+              >
+                Stories
+              </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-white hover:text-industrial-orange-500 transition-colors font-medium text-left"
